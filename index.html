@@ -191,7 +191,17 @@ button:hover {
 
 <body>
 
+<audio id="ourSong" loop>
+  <source src="ScreenRecording_10-03-2026 14-42-19_1.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playSong()">
+  🎵 Play our song ❤️
+</button>
+
 <!-- HOME -->
+
+
 
 <section class="page" id="home">
 
@@ -609,6 +619,10 @@ Tap for kisses 💋
 </section>
 
 <script>
+
+function playSong() {
+  document.getElementById("ourSong").play();
+}
 
 function show(id) {
 
